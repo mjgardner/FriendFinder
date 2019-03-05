@@ -1,0 +1,20 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "An application to help you find friends",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjgardner/FriendFinder.git"
+  },
+  "author": "Mark Gardner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjgardner/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/mjgardner/FriendFinder#readme"
+}
