@@ -222,7 +222,40 @@
     </div>
 
     <script type="text/javascript">
-    
+      $("#submit").click(function(event) {
+        event.preventDefault();
+
+        var isValid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+
+        if (isValid) {
+          var ajaxData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [
+              $("#q1").val(),
+              $("#q2").val(),
+              $("#q3").val(),
+              $("#q4").val(),
+              $("#q5").val(),
+              $("#q6").val(),
+              $("#q7").val(),
+              $("#q8").val(),
+              $("#q9").val(),
+              $("#q10").val()
+            ]
+          };
+          $.post("/api/friends", ajaxData, function(data) {
+            // TODO: get result from AJAX post
+          });
+        } else {
+          alert("Please fill out all fields.");
+        }
+      });
     </script>
   </body>
 </html>
