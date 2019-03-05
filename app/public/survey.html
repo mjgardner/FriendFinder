@@ -5,149 +5,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Survey</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
       <h1>FriendFinder Compatibility Survey</h1>
+      <form>
+        <div class="form-group">
+          <label for="name">Name (required):</label>
+          <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="photo">Link to Photo (required):</label>
+          <input type="text" id="photo" class="form-control" required>
+        </div>
 
-      <ol>
-        <li>
-          You find it easy to introduce yourself to other people.
-          <br>
-          <select>
-            <option value-""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-        </li>
-        <li>
-          You often get so lost in thoughts that you ignore or forget your
-          surroundings.
-          <br>
-          <select>
-            <option value-""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-        </li>
-        <li>
-          You try to respond to your e-mails as soon as possible and cannot
-          stand a messy inbox.
-          <br>
-          <select>
-            <option value-""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-        </li>
-        <li>
-          You find it easy to stay relaxed and focused even when there is some
-          pressure.
-          <br>
-          <select>
-            <option value-""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-        </li>
-        <li>
-          You don’t usually initiate conversations.
-          <br>
-          <select>
-            <option value-""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-        </li>
-        <li>
-          You feel a constant need for something new.
-          <br>
-          <select>
-            <option value-""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-        </li>
-        <li>
-          You feel it is better to regret something you did than something you
-          did not do.
-          <br>
-          <select>
-            <option value-""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-        </li>
-        <li>
-          Being adaptable is more important to you than being organized.
-          <br>
-          <select>
-            <option value-""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-        </li>
-        <li>
-          You believe that other people’s misfortune is not your problem.
-          <br>
-          <select>
-            <option value-""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-        </li>
-        <li>
-          Winning a debate is more important to you than making sure no one gets
-          upset.
-          <br>
-          <select>
-            <option value-""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-          </select>
-        </li>
-      </ol>
+        <ol>
+          <li>
+            <div class="form-group">
+              <label for="q1">
+                You find it easy to introduce yourself to other people.
+              </label>
+              <br>
+              <select class="form-control" id="q1">
+                <option value-""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label for="q2">
+                You often get so lost in thoughts that you ignore or forget your
+                surroundings.
+              </label>
+              <br>
+              <select class="form-control" id="q2">
+                <option value-""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label for="q3">
+                You try to respond to your e-mails as soon as possible and cannot
+                stand a messy inbox.
+              </label>
+              <br>
+              <select class="form-control" id="q3">
+                <option value-""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label for="q4">
+                You find it easy to stay relaxed and focused even when there is some
+                pressure.
+              </label>
+              <br>
+              <select class="form-control" id="q4">
+                <option value-""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label for="q5">
+                You don’t usually initiate conversations.
+              </label>
+              <br>
+              <select class="form-control" id="q5">
+                <option value-""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label for="q6">
+                You feel a constant need for something new.
+              </label>
+              <br>
+              <select class="form-control" id="q6">
+                <option value-""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label for="q7">
+                You feel it is better to regret something you did than something you
+                did not do.
+              </label>
+              <br>
+              <select class="form-control" id="q7">
+                <option value-""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label for="q8">
+                Being adaptable is more important to you than being organized.
+              </label>
+              <br>
+              <select class="form-control" id="q8">
+                <option value-""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label for="q9">
+                You believe that other people’s misfortune is not your problem.
+              </label>
+              <br>
+              <select class="form-control" id="q9">
+                <option value-""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label for="q10">
+                Winning a debate is more important to you than making sure no one gets
+                upset.
+              </label>
+              <br>
+              <select class="form-control" id="q10">
+                <option value-""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </li>
+        </ol>
 
-      <button type="submit" class="btn btn-primary" id="submit">
-        Submit
-      </button>
-
+        <button type="submit" class="btn btn-primary" id="submit">
+          Submit
+        </button>
+      </form>
       <hr>
       <footer class="footer">
         <div class="container">
@@ -160,5 +220,9 @@
         </div>
       </footer>
     </div>
+
+    <script type="text/javascript">
+    
+    </script>
   </body>
 </html>
