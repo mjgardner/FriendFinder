@@ -17,7 +17,8 @@ module.exports = function(app) {
         var friends = JSON.parse(data);
         if (!Array.isArray(friends)) res.sendStatus(500);
 
-        var leastTotalDifference = (5 - 1) * 10 + 1;
+        // starting value is one higher than the highest possible difference
+        var leastTotalDifference = (5 - 1) * newFriend.scores.length + 1;
         var closestFriend = { name: "", photo: "" };
         friends.forEach(function(friend) {
           var differences = [];
