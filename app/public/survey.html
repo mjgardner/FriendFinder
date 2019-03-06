@@ -252,8 +252,8 @@
 
         if (isValid) {
           var ajaxData = {
-            name: $("#name").val(),
-            photo: $("#photo").val(),
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
             scores: [
               $("#q1").val(),
               $("#q2").val(),
