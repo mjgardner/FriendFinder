@@ -8,7 +8,9 @@ module.exports = function(app) {
 
   app.post("/api/friends", function(req, res) {
     var newFriend = req.body;
-    newFriend.scores = newFriend.scores.map(function(value) {return parseInt(value)});
+    newFriend.scores = newFriend.scores.map(function(value) {
+      return parseInt(value);
+    });
     fs.readFile(
       path.join(__dirname, "..", "data", "friends.js"),
       { encoding: "utf8" },
